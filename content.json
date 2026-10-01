@@ -1,0 +1,113 @@
+{
+  "title": "Kaströrelse",
+  "introduction": "Undersök hur starthastighet och kastvinkel påverkar ett föremåls bana när det kastas och landar på samma höjd.",
+  "learningGoals": [
+    "Beskriva kaströrelse som en kombination av horisontell och vertikal rörelse.",
+    "Förklara hur kastvinkel och starthastighet påverkar flygtid, högsta höjd och räckvidd.",
+    "Använda en ideal modell för att jämföra rörelse med mätbara storheter."
+  ],
+  "model": {
+    "heading": "Modell och antaganden",
+    "description": "Föremålet startar vid marknivå och landar åter vid marknivå. Positiv horisontell riktning är framåt och positiv vertikal riktning är uppåt.",
+    "assumptions": [
+      "Tyngdaccelerationen är konstant: 9,81 m/s² nedåt.",
+      "Luftmotstånd och vind försummas.",
+      "Marken är plan och start- och landningshöjden är lika.",
+      "Kastvinkeln mäts uppåt från horisontalplanet och är mellan 0° och 90°."
+    ],
+    "explanation": "Den horisontella hastigheten är konstant. Den vertikala hastigheten förändras av tyngdaccelerationen. Tillsammans ger rörelserna en parabolisk bana.",
+    "angleComparison": "Vid samma starthastighet ger komplementvinklar, till exempel 30° och 60°, samma räckvidd i den här modellen. Kastvinkeln 45° ger längst räckvidd."
+  },
+  "quantities": {
+    "initialSpeed": {
+      "label": "Starthastighet",
+      "unit": "m/s"
+    },
+    "launchAngle": {
+      "label": "Kastvinkel",
+      "unit": "°"
+    },
+    "time": {
+      "label": "Tid",
+      "unit": "s"
+    },
+    "horizontalPosition": {
+      "label": "Horisontell position",
+      "unit": "m"
+    },
+    "verticalPosition": {
+      "label": "Höjd",
+      "unit": "m"
+    },
+    "horizontalVelocity": {
+      "label": "Horisontell hastighet",
+      "unit": "m/s"
+    },
+    "verticalVelocity": {
+      "label": "Vertikal hastighet",
+      "unit": "m/s"
+    },
+    "flightTime": {
+      "label": "Flygtid",
+      "unit": "s"
+    },
+    "maximumHeight": {
+      "label": "Högsta höjd",
+      "unit": "m"
+    },
+    "range": {
+      "label": "Räckvidd",
+      "unit": "m"
+    },
+    "elapsedTime": {
+      "label": "Förfluten tid",
+      "unit": "s"
+    }
+  },
+  "controls": {
+    "heading": "Startvärden",
+    "start": "Starta",
+    "pause": "Pausa",
+    "reset": "Återställ"
+  },
+  "settings": {
+    "initialSpeed": {
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "initial": 20
+    },
+    "launchAngle": {
+      "min": 0,
+      "max": 90,
+      "step": 1,
+      "initial": 45
+    }
+  },
+  "readouts": {
+    "heading": "Rörelsens storheter"
+  },
+  "graph": {
+    "heading": "Bana",
+    "accessibleTitle": "Kastföremålets bana",
+    "accessibleDescription": "Ett koordinatsystem visar kastbanan från marknivå till marknivå. Den rörliga markören visar föremålets aktuella position.",
+    "historyDescription": "Tidigare kast visas med varsin färg och deras inställningar står i teckenförklaringen.",
+    "groundLine": "Marknivå",
+    "launchPoint": "Start",
+    "landingPoint": "Nedslag",
+    "legendLabel": "Kastbanor",
+    "shotLabel": "Kast",
+    "previewLabel": "Nästa kast"
+  },
+  "status": {
+    "ready": "Redo att starta",
+    "running": "Rörelsen pågår",
+    "paused": "Rörelsen är pausad",
+    "landed": "Föremålet har landat"
+  },
+  "experiments": [
+    "Jämför kastvinklarna 30° och 60° med samma starthastighet. Hur skiljer sig banorna och vilka storheter är lika?",
+    "Ändra kastvinkeln stegvis. Vid vilken vinkel blir räckvidden störst?",
+    "Fördubbla starthastigheten utan att ändra vinkeln. Hur förändras räckvidd, flygtid och högsta höjd?"
+  ]
+}
